@@ -1,0 +1,32 @@
+/* styles.css */
+html {
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    height: 700px; /* figure this out */
+}
+
+.drum {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background: lightgray;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.drum:hover {
+    box-shadow: 0 8px 0 16px rgba(0, 0, 0, 0.02);
+}
