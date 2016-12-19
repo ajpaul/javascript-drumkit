@@ -6,27 +6,46 @@
     <meta charset="utf-8">
 
     <title>HTML5 Drumkit</title>
-    <meta name="description" content="JavaScript30: Day 1"></meta>
+    <meta name="description" content="A keyboard drumkit made with JS, CSS, and HTML"></meta>
     <meta name="author" content="Adam Paul"></meta>
 
     <!--link styles here-->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico">
 
 </head>
 
 <body>
 
+    <!-- keyboard keys -->
     <section class="container">
-        <div id="drum" class="drum">A</div>
-        <div class="drum">S</div>
-        <div class="drum">D</div>
-        <div class="drum">F</div>
-        <div class="drum">G</div>
-        <div class="drum">H</div>
-        <div class="drum">J</div>
-        <div class="drum">K</div>
-        <div class="drum">L</div>
+
+        <!-- left hand -->
+        <div class="drum" data-key="65">A</div>
+        <div class="drum"data-key="83">S</div>
+        <div class="drum" data-key="68">D</div>
+        <div class="drum"data-key="70">F</div>
+
+        <!-- right hand -->
+        <div class="drum" data-key="74">J</div>
+        <div class="drum" data-key="75">K</div>
+        <div class="drum" data-key="76">L</div>
+        <div class="drum" data-key="186">;</div>
     </section>
+
+    <!-- hidden sound elements -->
+    <section class="sounds">
+        <audio id="boom" src="sounds/boom.wav" hidden="true" data-key="65"></audio>
+        <audio id="clap" src="sounds/clap.wav" hidden="true" data-key="83"></audio>
+        <audio id="hihat" src="sounds/hihat.wav" hidden="true" data-key="68"></audio>
+        <audio id="kick" src="sounds/kick.wav" hidden="true"  data-key="70"></audio>
+        <audio id="openhat" src="sounds/openhat.wav" hidden="true" data-key="74"></audio>
+        <audio id="ride" src="sounds/ride.wav" hidden="true" data-key="75"></audio>
+        <audio id="snare" src="sounds/snare.wav" hidden="true" data-key="76"></audio>
+        <audio id="tink" src="sounds/tink.wav" hidden="true" data-key="186"></audio>
+    </section>
+
 
     <script src="scripts.js"></script>
 </body>

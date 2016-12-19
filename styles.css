@@ -2,6 +2,12 @@
 html {
     box-sizing: border-box;
     font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    background-color: #353535;
+    color: #FFF;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("concert.jpg"); /* fallback */
 }
 
 *, *:after, *:before {
@@ -20,13 +26,24 @@ html {
     width: 100px;
     height: 100px;
     line-height: 100px;
-    background: lightgray;
     border-radius: 5px;
     margin: 10px;
     text-align: center;
     font-size: 2em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-shadow:0 0 5px black;
+    transition: all 0.2s cubic-bezier(.25,.8,.25,1);
+    border: 2px solid #fff;
+    background: #353535;
+}
+
+.pressed {
+  transform:scale(1.1);
+  color: #FFF;
+  border-color:#7be4f2;
+  box-shadow: 0 0 10px #7be4f2;
 }
 
 .drum:hover {
-    box-shadow: 0 8px 0 16px rgba(0, 0, 0, 0.02);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.2);
 }
